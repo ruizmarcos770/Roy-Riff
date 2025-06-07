@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roy Riff - Motocicletas y Bicis Eléctricas | Tucumán, Argentina</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>ROY RIFF</h1>
+                    <span>ELECTRIC RIDES</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">NO SIGAS</span>
+                <span class="title-line">TENDENCIAS</span>
+            </h1>
+            <p class="hero-subtitle">CRÉALAS</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Explorar Productos</button>
+                <button class="btn btn-secondary">Únete al Movimiento</button>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">Modelos Únicos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="1000">0</div>
+                    <div class="stat-label">Roy Riffers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="3">0</div>
+                    <div class="stat-label">Años Creando</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-label">% Auténtico</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="productos" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestra Rebeldía</h2>
+                <p>Movilidad que expresa tu autenticidad</p>
+            </div>
+            
+            <div class="product-categories">
+                <button class="category-btn active" data-category="all">Todos</button>
+                <button class="category-btn" data-category="motos">Motocicletas</button>
+                <button class="category-btn" data-category="bicis">Bicis Eléctricas</button>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card" data-category="motos">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400" alt="Roy Riff Rebel">
+                        <div class="product-overlay">
+                            <button class="btn-view">Personalizar</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Roy Riff Rebel</h3>
+                        <p>Para los que desafían lo establecido</p>
+                        <div class="product-specs">
+                            <span><i class="fas fa-bolt"></i> Urbana</span>
+                            <span><i class="fas fa-palette"></i> Personalizable</span>
+                        </div>
+                        <div class="product-price">Desde $800,000</div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="bicis">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=400" alt="Roy Riff E-Street">
+                        <div class="product-overlay">
+                            <button class="btn-view">Personalizar</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Roy Riff E-Street</h3>
+                        <p>Creatividad sobre ruedas</p>
+                        <div class="product-specs">
+                            <span><i class="fas fa-bolt"></i> Eléctrica</span>
+                            <span><i class="fas fa-palette"></i> Única</span>
+                        </div>
+                        <div class="product-price">Desde $250,000</div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="motos">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1609630875171-b1321377ee65?w=400" alt="Roy Riff Vision">
+                        <div class="product-overlay">
+                            <button class="btn-view">Personalizar</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Roy Riff Vision</h3>
+                        <p>Donde la fe se materializa</p>
+                        <div class="product-specs">
+                            <span><i class="fas fa-bolt"></i> Potente</span>
+                            <span><i class="fas fa-palette"></i> Artística</span>
+                        </div>
+                        <div class="product-price">Desde $1,200,000</div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="bicis">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1502744688674-c619d1586c9e?w=400" alt="Roy Riff Freedom">
+                        <div class="product-overlay">
+                            <button class="btn-view">Personalizar</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Roy Riff Freedom</h3>
+                        <p>Libera tu potencial</p>
+                        <div class="product-specs">
+                            <span><i class="fas fa-bolt"></i> Aventura</span>
+                            <span><i class="fas fa-palette"></i> Rebelde</span>
+                        </div>
+                        <div class="product-price">Desde $320,000</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Sé Distinto. Sé Leal a Tu Idea. Sé Tú.</h2>
+                    <p>Roy Riff no es solo una marca de motos. Es una declaración. Creemos que el mundo necesita más personas que se animen a ser ellas mismas, que exploten el 100% de su creatividad y unicidad en cada proyecto.</p>
+                    
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <div>
+                                <h4>Autenticidad</h4>
+                                <p>La belleza de ser único, seguir la intuición</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-fire"></i>
+                            <div>
+                                <h4>Rebeldía Creativa</h4>
+                                <p>Desafiamos lo establecido con fe y visión</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>Comunidad</h4>
+                                <p>Ayudamos a otros a creer en sí mismos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600" alt="Roy Riff Philosophy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Únete al Movimiento</h2>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Ubicación</h4>
+                                <p>Yerba Buena & San Miguel de Tucumán</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Conecta</h4>
+                                <p>+54 381 ROY-RIFF</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>hola@royriff.com.ar</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Horarios</h4>
+                                <p>Lun-Vie: 10:00-19:00<br>Sáb: 10:00-14:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Expresa Tu Idea</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Tu Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="WhatsApp">
+                        </div>
+                        <div class="form-group">
+                            <select>
+                                <option>Motocicletas Urbanas</option>
+                                <option>Bicis Eléctricas</option>
+                                <option>Personalización</option>
+                                <option>Comunidad Roy Riff</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Cuéntanos tu visión..." rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <h1>ROY RIFF</h1>
+                        <span>ELECTRIC RIDES</span>
+                    </div>
+                    <p>"Sé distinto. Sé leal a tu idea. Sé tú." - Más que motos, somos un movimiento de jóvenes que desafían lo establecido y crean tendencias.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Productos</h4>
+                    <ul>
+                        <li><a href="#">Motocicletas Urbanas</a></li>
+                        <li><a href="#">Bicis Eléctricas</a></li>
+                        <li><a href="#">Personalización</a></li>
+                        <li><a href="#">Accesorios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Movimiento</h4>
+                    <ul>
+                        <li><a href="#">Comunidad</a></li>
+                        <li><a href="#">Roy Riff Experience</a></li>
+                        <li><a href="#">Eventos</a></li>
+                        <li><a href="#">Colaboraciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>Yerba Buena & San Miguel</li>
+                        <li>Tucumán, Argentina</li>
+                        <li>+54 381 ROY-RIFF</li>
+                        <li>hola@royriff.com.ar</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Roy Riff. No sigas tendencias, créalas.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
