@@ -60,6 +60,24 @@ body {
     padding: 0 20px;
 }
 
+/* Logo Styles - Updated for Image */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+/* Fallback styles for text logo if needed */
 .logo h1 {
     font-size: 1.8rem;
     font-weight: 900;
@@ -679,6 +697,24 @@ body {
     margin-bottom: 2rem;
 }
 
+/* Footer Logo - Updated for Image */
+.footer-section .logo {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.footer-section .logo img {
+    height: 35px;
+    width: auto;
+    transition: transform 0.3s ease;
+    filter: brightness(0) invert(1); /* Makes black logo white */
+}
+
+.footer-section .logo img:hover {
+    transform: scale(1.05);
+}
+
+/* Fallback for text logo in footer */
 .footer-section h1 {
     font-size: 1.5rem;
     font-weight: 900;
@@ -836,12 +872,8 @@ body {
         padding: 1rem 0;
     }
 
-    .logo h1 {
-        font-size: 1.5rem;
-    }
-
-    .logo span {
-        font-size: 0.6rem;
+    .logo img {
+        height: 30px;
     }
 
     .contact-form {
@@ -854,6 +886,10 @@ body {
 
     .footer-content {
         gap: 2rem;
+    }
+
+    .footer-section .logo img {
+        height: 30px;
     }
 }
 
@@ -902,6 +938,14 @@ body {
 
     .nav-container {
         padding: 0 15px;
+    }
+
+    .logo img {
+        height: 25px;
+    }
+
+    .footer-section .logo img {
+        height: 25px;
     }
 }
 
