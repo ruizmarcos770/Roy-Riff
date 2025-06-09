@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Header functionality
 function initHeader() {
     const header = document.querySelector('.header');
-    const logo = document.querySelector('.logo h1');
+    const logo = document.querySelector('.logo img'); // Updated for image logo
     
     // Header scroll effect
     window.addEventListener('scroll', () => {
@@ -30,13 +30,15 @@ function initHeader() {
         }
     });
 
-    // Logo click effect
-    logo.addEventListener('click', () => {
-        logo.style.transform = 'scale(0.95)';
-        setTimeout(() => {
-            logo.style.transform = 'scale(1)';
-        }, 150);
-    });
+    // Logo click effect - Updated for image
+    if (logo) {
+        logo.addEventListener('click', () => {
+            logo.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                logo.style.transform = 'scale(1)';
+            }, 150);
+        });
+    }
 }
 
 // Hero section animations
@@ -47,18 +49,24 @@ function initHero() {
 
     // Add progressive entrance animations
     setTimeout(() => {
-        heroTitle.style.opacity = '1';
-        heroTitle.style.transform = 'translateY(0)';
+        if (heroTitle) {
+            heroTitle.style.opacity = '1';
+            heroTitle.style.transform = 'translateY(0)';
+        }
     }, 300);
 
     setTimeout(() => {
-        heroSubtitle.style.opacity = '1';
-        heroSubtitle.style.transform = 'translateY(0)';
+        if (heroSubtitle) {
+            heroSubtitle.style.opacity = '1';
+            heroSubtitle.style.transform = 'translateY(0)';
+        }
     }, 800);
 
     setTimeout(() => {
-        heroButtons.style.opacity = '1';
-        heroButtons.style.transform = 'translateY(0)';
+        if (heroButtons) {
+            heroButtons.style.opacity = '1';
+            heroButtons.style.transform = 'translateY(0)';
+        }
     }, 1200);
 
     // Button hover effects
@@ -125,15 +133,17 @@ function initStats() {
 
     // Intersection Observer for stats
     const statsSection = document.querySelector('.stats');
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                animateStats();
-            }
-        });
-    }, { threshold: 0.5 });
+    if (statsSection) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateStats();
+                }
+            });
+        }, { threshold: 0.5 });
 
-    observer.observe(statsSection);
+        observer.observe(statsSection);
+    }
 }
 
 // Product filtering and animations
