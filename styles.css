@@ -163,7 +163,7 @@ body {
     height: 100%;
     background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
     /* Uncomment next line to use your banner image */
-    /* background-image: url('assets/banner-no-sigas-tendencias.jpg'); */
+    background-image: url('assets/banner-no-sigas-tendencias.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
