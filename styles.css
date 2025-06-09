@@ -48,7 +48,7 @@ body {
 }
 
 .navbar {
-    padding: 1.5rem 0;
+    padding: 1.2rem 0;
 }
 
 .nav-container {
@@ -67,7 +67,7 @@ body {
 }
 
 .logo img {
-    height: 40px;
+    height: 65px;
     width: auto;
     transition: transform 0.3s ease;
     cursor: pointer;
@@ -704,7 +704,7 @@ body {
 }
 
 .footer-section .logo img {
-    height: 35px;
+    height: 55px;
     width: auto;
     transition: transform 0.3s ease;
     filter: brightness(0) invert(1); /* Makes black logo white */
@@ -810,6 +810,14 @@ body {
     .contact-info h2 {
         font-size: 2.5rem;
     }
+
+    .logo img {
+        height: 60px;
+    }
+
+    .footer-section .logo img {
+        height: 50px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -873,7 +881,7 @@ body {
     }
 
     .logo img {
-        height: 30px;
+        height: 50px;
     }
 
     .contact-form {
@@ -889,7 +897,7 @@ body {
     }
 
     .footer-section .logo img {
-        height: 30px;
+        height: 45px;
     }
 }
 
@@ -941,11 +949,11 @@ body {
     }
 
     .logo img {
-        height: 25px;
+        height: 40px;
     }
 
     .footer-section .logo img {
-        height: 25px;
+        height: 35px;
     }
 }
 
