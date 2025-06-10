@@ -9,36 +9,24 @@ document.addEventListener('DOMContentLoaded', function() {
     initProducts();
     initMobileMenu();
     initSmoothScroll();
-    initScrollAnimations();
     initFormHandling();
-    
-    // Add subtle page load animation
-    document.body.style.opacity = '0';
-    setTimeout(() => {
-        document.body.style.transition = 'opacity 0.6s ease';
-        document.body.style.opacity = '1';
-    }, 100);
 });
 
 // Header functionality
 function initHeader() {
     const header = document.querySelector('.header');
-    const logo = document.querySelector('.logo img'); // Updated for image logo
+    const logo = document.querySelector('.logo img');
     
     // Header scroll effect
     window.addEventListener('scroll', () => {
         if (window.scrollY > 100) {
             header.classList.add('scrolled');
-            header.style.background = 'rgba(255, 255, 255, 0.98)';
-            header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
         } else {
             header.classList.remove('scrolled');
-            header.style.background = 'rgba(255, 255, 255, 0.95)';
-            header.style.boxShadow = 'none';
         }
     });
 
-    // Logo click effect - Updated for image
+    // Logo click effect
     if (logo) {
         logo.addEventListener('click', () => {
             logo.style.transform = 'scale(0.95)';
@@ -201,7 +189,7 @@ function initProducts() {
         btn.addEventListener('click', function(e) {
             e.preventDefault();
             
-            // Show customization modal (placeholder)
+            // Show customization modal
             showCustomizationModal();
         });
     });
@@ -254,6 +242,23 @@ function initSmoothScroll() {
             }
         });
     });
+
+    // Scroll indicator click
+    const scrollIndicator = document.querySelector('.scroll-indicator');
+    if (scrollIndicator) {
+        scrollIndicator.addEventListener('click', () => {
+            const statsSection = document.querySelector('.stats');
+            if (statsSection) {
+                const headerHeight = document.querySelector('.header').offsetHeight;
+                const targetPosition = statsSection.offsetTop - headerHeight;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    }
 }
 
 // Form handling
@@ -442,6 +447,15 @@ style.textContent = `
         to {
             opacity: 0;
             transform: translateX(100%);
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
         }
     }
 
